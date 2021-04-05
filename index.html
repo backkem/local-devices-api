@@ -1,68 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Local Devices API</title>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+    ></script>
+    <script class="remove">
+      "use strict";
+      // See https://github.com/w3c/respec/wiki/ for how to configure ReSpec
+      var respecConfig = {
+        githubAPI: "backkem/local-devices-api",
+        editors: [
+          {
+            name: "Michiel De Backker",
+            email: "mail@backkem.me",
+            company: "Twintag",
+            companyURL: "https://twintag.com",
+          },
+          // Add additional editors here.
+          // https://github.com/w3c/respec/wiki/editors
+        ],
+        shortName: "local-devices-api",
+        specStatus: "CG-DRAFT",
+        wg: "WICG",
+      };
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Local Devices API</title>
-  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
-  <script class='remove'>
-  "use strict";
-  // See https://github.com/w3c/respec/wiki/ for how to configure ReSpec
-  var respecConfig = {
-    "githubAPI": "WICG/local-devices-api",
-    "editors": [{
-        name: "Michiel De Backker",
-        email: "mail@backkem.me",
-        company: "Twintag",
-        companyURL: "https://twintag.com",
-      },
-      // Add additional editors here.
-      // https://github.com/w3c/respec/wiki/editors
-    ],
-    "shortName": "local-devices-api",
-    "specStatus": "CG-DRAFT",
-    "wg": "WICG",
-  };
-  </script>
-</head>
-
-<body>
-  <section id="abstract">
-    <p>
-      This specification does neat stuff.
-    </p>
-  </section>
-  <section id="sotd">
-    <p>
-      This is an unofficial proposal.
-    </p>
-  </section>
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>
-      See <a href="https://github.com/w3c/respec/wiki/User's-Guide">ReSpec's
-      user guide</a> for how to get started!
-    </p>
-  </section>
-  <section data-dfn-for="Foo">
-    <h2>Start your spec!</h2>
-    <pre class="idl">
-    interface Foo {
-      attribute Bar bar;
-      void doTheFoo();
-    };
-    </pre>
-    <p>
-      See <a href="https://github.com/w3c/respec/wiki/WebIDL-Guide">ReSpec's
-      WebIDL guide</a> for how to write [[!WebIDL-2]] interfaces!
-    </p>
-    <p>
-      The <dfn>doTheFoo</dfn> method.
-    </p>
-    <p>
-      The <dfn>bar</dfn> attribute.
-    </p>
-  </section>
-</body>
-
+  <body>
+    <section id="abstract">
+      <p>Securely connect browsers and devices on the Local Area Network.</p>
+    </section>
+    <section id="sotd">
+      <p>This is an unofficial proposal.</p>
+    </section>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        The Local Devices Protocol connects browsers to devices on the Local
+        Area Network. Typically, these are devices such as NAS servers,
+        Internet-connected TVs and IoT devices such as IP cameras, doorbells or
+        thermostats.
+      </p>
+      <p>
+        This entire specification assumes operation in an air-gapped Local Area
+        Network. There can be no reliance on cloud or other remote servers for
+        core functionality. The browser and devices should communicate directly
+        and only make use of readily available network protocols.
+      </p>
+      <p>
+        This proposal is highly similar to that of the
+        <a href="https://github.com/w3c/respec/wiki/User's-Guide"
+          >Open Screen Protocol</a
+        >. This specification therefore often refers to it.
+      </p>
+    </section>
+  </body>
 </html>
